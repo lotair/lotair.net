@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lotair.net/"/>
-  <updated>2017-06-23T04:39:03.846Z</updated>
+  <updated>2017-06-23T04:40:24.589Z</updated>
   <id>http://lotair.net/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://lotair.net/2017/06/22/tune-tips/"/>
     <id>http://lotair.net/2017/06/22/tune-tips/</id>
     <published>2017-06-22T20:14:02.000Z</published>
-    <updated>2017-06-23T04:39:03.846Z</updated>
+    <updated>2017-06-23T04:40:24.589Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>This post holds miscellaneous tips about tunning programs, and I wish that it would be updated constantly.</p>
 <h1 id="How-to-Do-Benchmarking"><a href="#How-to-Do-Benchmarking" class="headerlink" title="How to Do Benchmarking"></a>How to Do Benchmarking</h1><h2 id="Cheat-on-Compiler-Optimizer"><a href="#Cheat-on-Compiler-Optimizer" class="headerlink" title="Cheat on Compiler Optimizer"></a>Cheat on Compiler Optimizer</h2><p>Prevent functions being optimized away via inlining.<br><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">void to_be_tuned() __attribute__((noinline));</div><div class="line">void to_be_tuned()</div><div class="line">&#123;</div><div class="line">    ...</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
